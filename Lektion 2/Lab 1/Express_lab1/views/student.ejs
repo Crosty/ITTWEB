@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <h1><%= title %></h1>
+    <link rel='stylesheet' href="/stylesheets/style.css">
   </head>
   <body>
-    <h1><%= title %></h1>
-      <div class="container">
-          <div class="column">
-              <div class="col1 col-lg-12">
-                  <h1>Student List</h1>
-                  <hr>
-              </div>
-              <div class="col2 col-lg-12">
-                  <p id="first">Their grades</p>
-                  <input id="studentInput" type="text" placeholder="Enter student name">
-                  <input id="gradeInput" type="number" placeholder="Enter student grade">
-                  <button id="enter">Insert</button>
-                  <button id="studentList">Student List</button>
-              </div>
-          </div>
-      </div>
-  </body>
+    <h1>Express Lab1 Student form</h1>
+    <form action="/addStudent" method="POST">
+      <p>Enter the data here</p>
+      <input id="name" name="name" type="text" placeholder="Enter student name">
+      <input id="grade" name="grade" type="text" placeholder="Enter student grade">
+      <input id="submit" type="submit" value="Submit">
+    </form>
+    </body>
 </html>

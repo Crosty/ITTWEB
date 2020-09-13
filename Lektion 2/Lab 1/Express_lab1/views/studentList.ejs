@@ -1,0 +1,19 @@
+<h1>Student List</h1>
+<% Students.forEach(students => { %>
+<li>
+  <strong>
+    <%= students.name %>
+  </strong>
+  <span>
+    <%= students.grade %> 
+  </span>
+</li>
+<% }); %>
+<br>
+<button type="button" onclick="back()">Back</button>
+
+<script>
+    function back() {
+        location.href='/';
+    };
+</script>
